@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>关系型数据库与非关系型数据库的区别</title>
+      <link href="/2021/07/03/guan-xi-xing-shu-ju-ku-yu-fei-guan-xi-xing-shu-ju-ku-de-qu-bie/"/>
+      <url>/2021/07/03/guan-xi-xing-shu-ju-ku-yu-fei-guan-xi-xing-shu-ju-ku-de-qu-bie/</url>
+      
+        <content type="html"><![CDATA[<h2 id="关系型数据库"><a href="#关系型数据库" class="headerlink" title="关系型数据库"></a>关系型数据库</h2><blockquote><p> SQLite、Oracle、mysql</p></blockquote><p>特征</p><p>1、关系型数据库，是指采用了关系模型来组织 数据的数据库；<br> 2、关系型数据库的最大特点就是事务的一致性；<br> 3、简单来说，关系模型指的就是二维表格模型， 而一个关系型数据库就是由二维表及其之间的联系所组成的一个数据组织。</p><p>优点</p><p>1、容易理解：二维表结构是非常贴近逻辑世界一个概念，关系模型相对网状、层次等其他模型来说更容易理解；<br> 2、使用方便：通用的SQL语言使得操作关系型数据库非常方便；<br> 3、易于维护：丰富的完整性(实体完整性、参照完整性和用户定义的完整性)大大减低了数据冗余和数据不一致的概率；<br> 4、支持SQL，可用于复杂的查询。</p><p>缺点</p><p>1、为了维护一致性所付出的巨大代价就是其读写性能比较差；<br> 2、固定的表结构；<br> 3、高并发读写需求；<br> 4、海量数据的高效率读写；</p><h2 id="非关系型数据库"><a href="#非关系型数据库" class="headerlink" title="非关系型数据库"></a>非关系型数据库</h2><blockquote><p> MongoDb、redis、HBase</p></blockquote><p>特征</p><p>1、使用键值对存储数据；<br> 2、分布式；<br> 3、一般不支持ACID特性；<br> 4、非关系型数据库严格上不是一种数据库，应该是一种数据结构化存储方法的集合。</p><p>优点</p><p>1、无需经过sql层的解析，读写性能很高；<br> 2、基于键值对，数据没有耦合性，容易扩展；<br> 3、存储数据的格式：nosql的存储格式是key,value形式、文档形式、图片形式等等，文档形式、图片形式等等，而关系型数据库则只支持基础类型。</p><p>4、处理高并发，大批量竖的能力强</p><p>缺点</p><p>1、不提供sql支持，学习和使用成本较高；<br> 2、无事务处理，附加功能bi和报表等支持也不好；</p><blockquote><p>注1：数据库事务必须具备ACID特性，ACID是Atomic原子性，Consistency一致性，Isolation隔离性，Durability持久性。</p><p>注2：数据的持久存储，尤其是海量数据的持久存储，还是需要一种关系数据库。</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>idea快捷键</title>
+      <link href="/2021/07/03/idea-kuai-jie-jian/"/>
+      <url>/2021/07/03/idea-kuai-jie-jian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="idea快捷键"><a href="#idea快捷键" class="headerlink" title="idea快捷键"></a>idea快捷键</h1><h2 id="1-常用快捷键get、set、注释、代码提示、换行、格式化"><a href="#1-常用快捷键get、set、注释、代码提示、换行、格式化" class="headerlink" title="1.常用快捷键get、set、注释、代码提示、换行、格式化"></a>1.常用快捷键get、set、注释、代码提示、换行、格式化</h2><blockquote><p><em><strong>Alt+Ins</strong></em>    get、set、构造</p><p><em><strong>Ctrl+ /</strong></em>    注释/取消注释与行注释</p><p><em><strong>Alt+Enter</strong></em>    代码提示</p><p><em><strong>Shift+Enter</strong></em>    可以向下插入新行，即使光标在当前行的中间</p><p><em><strong>Ctrl+ Alt+ L</strong></em><em><strong>(大写)</strong></em>     格式化代码</p><p><em><strong>Ctrl+Y</strong></em>    删除行</p><p><em><strong>Ctrl+D</strong></em>    复制行</p><p><em><strong>Command + + 、 Command -</strong></em>     展开 / 折叠代码块</p><p><em><strong>Ctrl+ Alt+ T</strong></em>     包围代码（使用if..else, try..catch, for, synchronized等包围选中的代码）</p></blockquote><h2 id="2、光标定位及选中快捷键"><a href="#2、光标定位及选中快捷键" class="headerlink" title="2、光标定位及选中快捷键"></a>2、光标定位及选中快捷键</h2><blockquote><p><em><strong>Ctrl+Alt+Left/Right</strong></em>    光标定位到上一个/下一个浏览位置处</p><p><em><strong>Ctrl+Shift+Backspace</strong></em>    光标定位到上次修改的地方</p><p><em><strong>Alt+Up/Down</strong></em>   移动光标到上一个/下一个方法开始处</p><p><em><strong>Ctrl+Left/Right</strong></em>    移动光标到前一个/后一个单词处，加Shift键，产生选中效果</p><p><em><strong>Ctrl+[/]</strong></em>    移动光标到前/后代码块，加Shift键，产生选中效果</p><p><em><strong>Ctrl+W</strong></em>    按语法选中代码，连续按会有其他效果，加Shift键，产生反向选中效果</p><p><em><strong>F2</strong></em>    快速定位到下一个错误和警告处，加Shift键，定位到上一个错误处</p><p><em><strong>Ctrl+”+/-“</strong></em>   当前方法展开/折叠，加Shift键，全部方法展开/折叠</p><p><em><strong>Ctrl+Alt+T</strong></em>     在选中代码情况下，Surround With(if/else/try catch…) 快速包裹代码</p><p><em><strong>Ctrl+Alt+V</strong></em>     提出选中内容为局部变量</p></blockquote><h2 id="3、删除-插入相关快捷键"><a href="#3、删除-插入相关快捷键" class="headerlink" title="3、删除/插入相关快捷键"></a>3、删除/插入相关快捷键</h2><blockquote><p><em><strong>Ctrl+Backspace</strong></em>   按单词删除</p><p><em><strong>Ctrl+D</strong></em>   复制行</p><p><em><strong>Ctrl+Y</strong></em>   删除当前行</p><p><em><strong>Ctr+Shift+U</strong></em>   大小写转化</p><p><em><strong>Shift+Enter</strong></em>   向下插入新行，配合Ctrl键，先代码补全再插入新行</p><p><em><strong>Ctrl+Alt+Enter</strong></em>   向上插入新行</p><p><em><strong>Ctrl+Shift+Up/Down</strong></em>   整体向上/下移动语句块/方法</p><p><em><strong>Alt+Shift+Up/Down</strong></em>   单行向上/下移一行</p></blockquote><h2 id="4、文件之间定位相关快捷"><a href="#4、文件之间定位相关快捷" class="headerlink" title="4、文件之间定位相关快捷"></a>4、文件之间定位相关快捷</h2><blockquote><p><em><strong>Ctrl+E/Ctrl+Tab</strong></em>   查看/切换最近打开过的文件（通过方向键上下选择后，按Enter键进入）</p><p><em><strong>ALT+Left/Right</strong></em>   打开的代码编辑窗口中左右切换</p></blockquote><h2 id="5、查找相关快捷键"><a href="#5、查找相关快捷键" class="headerlink" title="5、查找相关快捷键"></a>5、查找相关快捷键</h2><blockquote><p><em><strong>Ctrl+F/R</strong></em>   当前文件下查找/替换文本，加Shift键，当前工程路径下查找/替换文本</p><p><em><strong>Ctrl+N</strong></em>   查找类</p><p><em><strong>Ctrl+Shift+N</strong></em>   查找文件</p><p><em><strong>Ctrl+Shift+Alt+N</strong></em>   查找类中的方法或变量</p><p><em><strong>Shift+Shift</strong></em>   全局查找</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>创建一个Vue项目</title>
+      <link href="/2021/07/03/chuang-jian-yi-ge-vue-xiang-mu/"/>
+      <url>/2021/07/03/chuang-jian-yi-ge-vue-xiang-mu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="创建一个Vue项目"><a href="#创建一个Vue项目" class="headerlink" title="创建一个Vue项目"></a>创建一个Vue项目</h1><h2 id="1、创建Vue指令"><a href="#1、创建Vue指令" class="headerlink" title="1、创建Vue指令"></a>1、创建Vue指令</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack </span><br></pre></td></tr></tbody></table></figure><h2 id="2、引入相关的配置"><a href="#2、引入相关的配置" class="headerlink" title="2、引入相关的配置"></a>2、引入相关的配置</h2><ol><li><p>下载axios指令</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install axios</span><br></pre></td></tr></tbody></table></figure></li><li><p>下载Element ui 指令  </p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i element-ui -S</span><br></pre></td></tr></tbody></table></figure></li><li><p>在main.js里配置</p></li></ol><p><img src="C:\Users\27408\AppData\Roaming\Typora\typora-user-images\image-20210524094904234.png" alt="image-20210524094904234"></p><figure class="highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import ElementUI from 'element-ui' //引入elementUl</span><br><span class="line">import 'element-ui/lib/theme-chalk/index.css'</span><br><span class="line">Vue.use(ElementUI);//使用</span><br><span class="line">Vue.config.productionTip = false</span><br><span class="line">import axios from 'axios' //引入axios</span><br><span class="line">Vue.prototype.$http=axios ;//给Vue函数添加一个运行属性$http指向axios</span><br></pre></td></tr></tbody></table></figure><p><img src="C:\Users\27408\AppData\Roaming\Typora\typora-user-images\image-20210602091351430.png" alt="image-20210602091351430"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于thymeleaf  img  src动态参数赋值</title>
+      <link href="/2021/07/03/guan-yu-thymeleaf-img-src-dong-tai-can-shu-fu-zhi/"/>
+      <url>/2021/07/03/guan-yu-thymeleaf-img-src-dong-tai-can-shu-fu-zhi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于thymeleaf-img-src动态参数赋值"><a href="#关于thymeleaf-img-src动态参数赋值" class="headerlink" title="关于thymeleaf  img  src动态参数赋值"></a>关于thymeleaf  img  src动态参数赋值</h1><p>1、在pom.xml中配置thymeleaf</p><figure class="highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-thymeleaf<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><p>2、配置application.properties路径</p><p>应该以什么样的路径来访问静态资源,这表示只有静态资源的访问路径为/static/ 时才会处理(如<a href="http://localhost:8080/static/css/base.css">http://localhost:8080/static/css/base.css</a>)</p><figure class="highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spring.mvc.static-path-pattern=/static/**</span><br></pre></td></tr></tbody></table></figure><p>3、页面引用</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span> <span class="attr">xmlns:th</span>=<span class="string">"http://www.thymeleaf.org"</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h3 id="取值和跳转"><a href="#取值和跳转" class="headerlink" title="取值和跳转"></a>取值和跳转</h3><blockquote><p>1、从数据库中取值</p></blockquote><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">th:src</span>=<span class="string">"@{(${xxx.xxx})}"</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><blockquote><p>2、从静态文件中取值</p></blockquote><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"/static/images/1.gif"</span> &gt;</span> </span><br></pre></td></tr></tbody></table></figure><blockquote><p>3、跳转controller路径带数据</p></blockquote><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">th:href</span>=<span class="string">"@{/shop/delete(id=${shops.id})}"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span> </span><br></pre></td></tr></tbody></table></figure><blockquote><p>4、跳转controller路径不带数据</p></blockquote><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/shop/shopindex"</span>&gt;</span>网站首页<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><p>数据库存值方式</p><p><img src="C:\Users\27408\AppData\Roaming\Typora\typora-user-images\image-20210612191605494.png" alt="image-20210612191605494"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2021/06/29/hello-world/"/>
       <url>/2021/06/29/hello-world/</url>
